@@ -1,0 +1,74 @@
+body
+{
+    padding: 50px;
+    background-color: rgb(182, 179, 179);
+}
+
+
+/* Tabs style */
+.tabs
+{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tabs a
+{
+    text-decoration: none;
+}
+
+.tabs .active a
+{
+    color: red;
+}
+
+
+/* Nav list decoration */
+ul, li
+{
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    background: #EEE;
+    height: 20px;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid rgba(102, 101, 101, 0.856);
+}
+
+
+
+.active-link-decoration
+{
+    background-color: white;
+    box-shadow: 0px 14px 1px white;
+    border-bottom:none;
+}
+
+
+/* Tabs-content style */
+.tabs-content
+{
+    padding: 15px;
+    background-color: white;
+}
+
+.tab-content
+{
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.tab-content.active
+{
+    display: block;
+    width: inherit;
+    height: inherit;
+    transition: opacity 0.5s;
+    opacity: 1;
+}
